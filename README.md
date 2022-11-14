@@ -59,7 +59,7 @@ Afin de permettre cette utilisation plusieurs étapes sont à suivre:
 
 * 1: Création du répertoire GitHub
     La procédure de création d'un répertoire GitHub est la suivante :
-     - 
+    
 * 2: Envoie du projet dans la zone tampon (Commit)
 
 * 3: Envoie du projet vers le depot distant Github
