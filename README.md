@@ -57,15 +57,15 @@ Une fois les containers démarrés dans Docker, on peut accèder à l'applicatio
 Pour effectuer un travail colaboratif sur le projet 3ISystem, nous allons utiliser la fonction de dépot distant de GitHub.
 Afin de permettre cette utilisation plusieurs étapes sont à suivre:
 
-* 1: Création du répertoire GitHub
+* 1 - Création du répertoire GitHub<br/>
     La procédure de création d'un répertoire GitHub est la suivante :
-    
-* 2: Envoie du projet dans la zone tampon (Commit)
 
-* 3: Envoie du projet vers le depot distant Github
+* 2 - Envoie du projet dans la zone tampon (Commit)<br/>
 
-* 4: Clonage du projet (pour les collaborateurs)
+* 3 - Envoie du projet vers le depot distant Github<br/>
 
-* 6: Création des branch du projet pour les differentes équipes de travail
+* 4 - Clonage du projet (pour les collaborateurs)<br/>
 
-* 5: Mise à jour du projet sur GitHub (Push - Pull)
+* 6 - Création des branch du projet pour les differentes équipes de travail<br/>
+
+* 5 - Mise à jour du projet sur GitHub (Push - Pull)<br/>
