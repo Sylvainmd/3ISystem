@@ -118,4 +118,10 @@ Afin de permettre cette utilisation plusieurs étapes sont à suivre:
     git merge nom_branch
     ```
     _Le nom de la branche que l'on indique dans la commande merge est celle d'ou on veut récuperer les données_
+
 * 5 - Mise à jour du projet sur GitHub (Push - Pull)<br/>
+
+    ```
+    git push --set-upstream origin nom_branch
+
+    ```
