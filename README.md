@@ -11,6 +11,8 @@ Menu Teddy - Dev Front-End<br/>
 
 ## Premiere Installation FrameWork LARAVEL
 
+### Prérequis
+
 <p>
 Vérifier que WSL soit installer sur le poste 
 </p>
@@ -32,7 +34,7 @@ La partie "exemple-app" dans l'url peut etre modifier comme ont le souhaite, la 
 Le répertoire de l'application Laravel sera créé dans le répertoire présiser dans la commande prédément executé.
 </p>
 
-<p></p>
+### Mise en place des containers DOCKER
 
 <p>
 Une fois le projet créé avec la commande curl,<br/>
