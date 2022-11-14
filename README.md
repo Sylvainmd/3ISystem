@@ -59,13 +59,63 @@ Afin de permettre cette utilisation plusieurs étapes sont à suivre:
 
 * 1 - Création du répertoire GitHub<br/>
     La procédure de création d'un répertoire GitHub est la suivante :
+        - Création d'un compte GitHub (si vous n'en possedez pas deja un)
+        - Allez dans votre profil > Your Repositories > New
+        - Dans "Repository name" attribuer un nom à votre depot (celui-ci deffinira le nom de votre projet), vous pouvez également ajouter une description mais cela n'est pas obligatoire.
+        - Vous pouvez ensuite choisir entre mettre le projet à disposition de tout le monde en selectionnant "Public" ou de le garder pour vous en selecionnant "Private".
+        - Concernant l'ajout d'un fichier README et du .gitignore, etant donner que nous allons utilisez le framework Laravel ces fichier sont deja présent, il n'est donc pas utile de les ajouter lors de la création de notre dépot.
 
-* 2 - Envoie du projet dans la zone tampon (Commit)<br/>
+* 2 - Démarrage du projet <br/>
+    Une fois le framework Laravel récupérer et le dépot distant Git créer nous devons tout d'abord initialiser le projet :
+    ```
+    git init
+    ```
+
+    Une fois le projet initaliser nous pouvons effectuer notre premier commit :
+    ```
+    git add -A
+    git commit -m "First Commit"
+    ```
 
 * 3 - Envoie du projet vers le depot distant Github<br/>
 
+    Après avoir effectuer notre premier commit nous allons ensuite envoyer notre projet sur le depot distant Git :
+    ```
+    git remote add origin https://github.com/nom_utilisateur_Git/nom_repository
+    git branch -M main
+    git push -u origin main
+    ```
 * 4 - Clonage du projet (pour les collaborateurs)<br/>
 
-* 6 - Création des branch du projet pour les differentes équipes de travail<br/>
+    Quand le projet est envoyé vers le depot distant les collaborateurs peuvent maintenant le cloner afin de pouvoir faire leur modification :
 
+    _A faire depuis le terminal GitBash en bas de VSCode_
+    ```
+    cd Desktop/
+    git clone https://github.com/nom_utilisateur_Git/nom_repository.git
+    ```
+
+* 6 - Création des branch du projet pour les differentes équipes de travail<br/>
+    Afin de facilité le travail collaboratif sur un meme projet, il est conseillé d'utiliser la fonction de "branch" qui permet de créer des projet parrallèlement afin de modifier notre code et nos fichier sans impacter la branche principale.
+
+    Création d'une nouvelle branche :
+    ```
+    git branch nom
+    ```
+
+    Visualisé les branches éxistantes :
+    ```
+    git branch
+    ```
+
+    Changer de branche :
+    ```
+    git checkout nom_branch
+    ```
+
+    Synchroniser les données entre les branches:
+    ```
+    git merge nom_branch
+    ```
+    _Le nom de la branche que l'on indique dans la commande merge est celle d'ou on veut récuperer les données_
 * 5 - Mise à jour du projet sur GitHub (Push - Pull)<br/>
