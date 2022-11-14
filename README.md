@@ -121,7 +121,19 @@ Afin de permettre cette utilisation plusieurs étapes sont à suivre:
 
 * 5 - Mise à jour du projet sur GitHub (Push - Pull)<br/>
 
+    Quand le projet est cloner la premiere fois, il n'est pas mis a jour automatiquement quand une modification est apportée dans le dépot distant.
+    Pour mettre à jour notre projet en local avec les modifications du dépot Git il faut executer la commande :
+    ```
+    git pull
+    ```
+
+    A l'inverse pour envoyer nos modifications vers le depot git il faut, après avoir executer les commande ```git add nom_fichier``` et ```git commit``` :
+    ```
+    git push
+    ```
+
+    Pour lier une branche a notre depot Git afin de pouvoir ensuite la push :
+    
     ```
     git push --set-upstream origin nom_branch
-
     ```
