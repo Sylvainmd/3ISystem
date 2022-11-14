@@ -26,6 +26,15 @@ class UserFactory extends Factory
         ];
     }
 
+    /** User model **/
+/** One to Many relation with Post **/
+    public function posts() 
+    {
+        return $this->hasMany(Post::class, 'user_id');
+   
+   
+    }
+
     /**
      * Indicate that the model's email address should be unverified.
      *
