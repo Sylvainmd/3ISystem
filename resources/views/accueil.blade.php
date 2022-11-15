@@ -14,7 +14,7 @@
         </header>
         <ul><!--Pour les listes-->
             <li><a href="services.pdf">Services</a></li>
-            <li><a href="tarif.html">Tarifs</a></li>
+            <li><a href="tarifs">Tarifs</a></li>
             <li><a href="mailto:votreadresse@mail.fr" class="btn btn-primary">Contact</a></li>
           </ul>
           <p><i>Vous souhaitez migrer vers les solutions Cloud ?</i></br>3iSystem est là pour booster l'industrialisation de vos process.</p>

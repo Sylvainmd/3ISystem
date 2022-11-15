@@ -21,8 +21,8 @@ use App\Http\Controllers\ReplyController;
 Route::get('/accueil', function () {  /*Page d'accueil*/
     return view('accueil');
 });
-Route::get('/tarif', function () {  /*Page tarif*/
-    return view('tarif');
+Route::get('/tarifs', function () {  /*Page tarif*/
+    return view('tarifs');
 });
 
 Route::get('/user', [UserController::class, 'index']);
