@@ -119,6 +119,8 @@ Afin de permettre cette utilisation plusieurs étapes sont à suivre:
     ```
     _Le nom de la branche que l'on indique dans la commande merge est celle d'ou on veut récuperer les données_
 
+    Dans notre cas, nous avons créer deux branches secondaires, une pour la partie BackEnd et une autre pour la partie FrontEnd.
+
 * 5 - Mise à jour du projet sur GitHub (Push - Pull)<br/>
 
     Quand le projet est cloner la premiere fois, il n'est pas mis a jour automatiquement quand une modification est apportée dans le dépot distant.
@@ -137,3 +139,24 @@ Afin de permettre cette utilisation plusieurs étapes sont à suivre:
     ```
     git push --set-upstream origin nom_branch
     ```
+
+* 6 - Utilisation des Tags de versions
+
+    L'utilisation des tags permet de marquer les numéros de versions sur les commits.
+
+    ```
+    git tag v1.0.0
+    ```
+
+    Grace au -a ont indique qu'il s'agit d'un tag annoté avec l'utilisation d'un -m
+
+    Pour lister les tags existant :
+    ```
+    git tag --list
+    ```
+
+    Afficher les detailles d'un tag :
+    ```
+    git show v1.0.0
+    ```
+    
