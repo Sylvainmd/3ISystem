@@ -180,6 +180,10 @@ Pour commencer la partie BackEnd, l'équipe Back-Office dois modifier trois type
 
 _Les models sont créés avec les fichier de migration et controllers_
 
-
 Pour gérer l'accès au Back-Office nous avons utiliser la solution Breeze
+
+### Modification apportées au projet
+    Création de 3 table dans la BDD : Comment, Reply, Task <br/>
+
+
 ## Partie Front-End
