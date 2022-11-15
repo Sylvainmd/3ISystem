@@ -18,6 +18,6 @@
             <li><a href="/">Nos informations</a></li>
             <li><a href="mailto:votreadresse@mail.fr" class="btn btn-primary">Contact</a></li>
           </ul>
-          <img alt ="Fonctionnalité en contruction" src="giphy (2).gif"/>
+          <img alt ="Fonctionnalité en contruction" src="{{ asset('/Images/giphy.gif') }}"/>
     </body>
  </html>
