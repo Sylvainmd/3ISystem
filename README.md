@@ -95,6 +95,18 @@ Afin de permettre cette utilisation plusieurs étapes sont à suivre:
     git clone https://github.com/nom_utilisateur_Git/nom_repository.git
     ```
 
+    Pour que les collaborateur puissent pleinement utiliser les fonctions de notre projet, ils devront recuperer les differentes configuration présente dans le fichier ".env.exemple".
+
+    Le fichier ".env.exemple" contient les différentes variable d'environement du projet, telle que les mots de passe d'accès à la BDD, le nom de l'application etc .
+
+    Ces variables de fonciton varie suivant les différentes applications qui tournent en local ou les serveurs Web utiliser par le projet.
+
+    Le contenue du fichier ".env.exemple" sera automatiquement copié dans un fichier ".env" lors de l'installation de Laravel.
+
+    Lorque l'ont travail en mode projet avec plusieurs collaborateurs, il est important d'envoyer le fichier ".env.exemple" sur le dépôt Git distant afin qu'il puissent faire tourner l'application correctement.
+
+    _Doc Source : https://laravel.com/docs/9.x/configuration ._
+
 * 6 - Création des branch du projet pour les differentes équipes de travail<br/>
     Afin de facilité le travail collaboratif sur un meme projet, il est conseillé d'utiliser la fonction de "branch" qui permet de créer des projet parrallèlement afin de modifier notre code et nos fichier sans impacter la branche principale.
 
@@ -180,6 +192,14 @@ Pour commencer la partie BackEnd, l'équipe Back-Office dois modifier trois type
 
 _Les models sont créés avec les fichier de migration et controllers_
 
-
 Pour gérer l'accès au Back-Office nous avons utiliser la solution Breeze
+
+### Modification apportées au projet
+
+Création de 3 table dans la BDD : Comment, Reply, Task <br/>
+Modifiaction des liaisons entre le projet et les BDD pour faire correspondre les commandes avec les nouvelles Tables. <br/>
+Toutes ces modifications ont pour but de créer une otpion de login sur notre site. <br/>
+_Malheursement, à cause de problèmes non résoluts, cette option n'est pas encore disponible_
+
+
 ## Partie Front-End
