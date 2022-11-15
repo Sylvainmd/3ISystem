@@ -13,8 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
 });
+*/
 
-Route::get('/user', [UserController::class, 'index']);
+Route::get('/accueil', function () {
+    return view('accueil');
+});
