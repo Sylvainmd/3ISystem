@@ -30,5 +30,8 @@
           <h2>Maintenance/Hotline</h2>
           
           <p>Depuis plus de 15 ans, des experts répondent à vos questions pour résoudre vos problèmes.</p>
+          <footer> 
+            3iSystem ©
+</footer>
     </body>
  </html>

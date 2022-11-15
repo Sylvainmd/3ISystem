@@ -25,4 +25,3 @@ Route::get('/tarifs', function () {  /*Page tarif*/
     return view('tarifs');
 });
 
-Route::get('/user', [UserController::class, 'index']);
