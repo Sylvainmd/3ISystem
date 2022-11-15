@@ -160,6 +160,17 @@ Afin de permettre cette utilisation plusieurs étapes sont à suivre:
     git show v1.0.0
     ```
 
+    * 7 - Revenir à une version précédente
+
+    Pour revenir à une version précédente deux option s'offre à nous :<br/>
+        - Le ```git reset``` pour réinitialiser un commit précédent dans le référenciel Git<br/>
+        - Le ```git revert``` pour revenir à un commit précédent dans le référenciel Git<br/>
+
+    
+    _Source Documentaire : https://www.delftstack.com/fr/howto/git/git-go-back-to-previous-commit/ ._
+
+
+
 ## Partie Back-Office
 
 Pour commencer la partie BackEnd, l'équipe Back-Office dois modifier trois types de fichiers, afin de faire correspondre le projet Laravel avec le schema de BDD précedant :
