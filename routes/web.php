@@ -18,8 +18,11 @@ use App\Http\Controllers\ReplyController;
 |
 */
 
-Route::get('/accueil', function () {
+Route::get('/accueil', function () {  /*Page d'accueil*/
     return view('accueil');
+});
+Route::get('/tarif', function () {  /*Page tarif*/
+    return view('tarif');
 });
 
 Route::get('/user', [UserController::class, 'index']);
