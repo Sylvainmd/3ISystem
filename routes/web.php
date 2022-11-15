@@ -18,7 +18,7 @@ use App\Http\Controllers\ReplyController;
 |
 */
 
-Route::get('/accueil', function () {  /*Page d'accueil*/
+Route::get('/', function () {  /*Page d'accueil*/
     return view('accueil');
 });
 Route::get('/tarifs', function () {  /*Page tarif*/
