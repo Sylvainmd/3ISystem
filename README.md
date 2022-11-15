@@ -159,3 +159,16 @@ Afin de permettre cette utilisation plusieurs étapes sont à suivre:
     ```
     git show v1.0.0
     ```
+
+## Partie Back-Office
+
+Pour commencer la partie BackEnd, l'équipe Back-Office dois modifier trois types de fichiers, afin de faire correspondre le projet Laravel avec le schema de BDD précedant :
+* Les models (app/Models)
+* Les fichier de migrations (app/Http/migration)
+* Et les controllers (app/Http/Controllers)
+
+_Les models sont créés avec les fichier de migration et controllers_
+
+
+Pour gérer l'accès au Back-Office nous avons utiliser la solution Breeze
+## Partie Front-End
