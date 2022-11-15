@@ -58,12 +58,12 @@ Pour effectuer un travail colaboratif sur le projet 3ISystem, nous allons utilis
 Afin de permettre cette utilisation plusieurs étapes sont à suivre:
 
 * 1 - Création du répertoire GitHub<br/>
-    La procédure de création d'un répertoire GitHub est la suivante :
-        - Création d'un compte GitHub (si vous n'en possedez pas deja un)
-        - Allez dans votre profil > Your Repositories > New
-        - Dans "Repository name" attribuer un nom à votre depot (celui-ci deffinira le nom de votre projet), vous pouvez également ajouter une description mais cela n'est pas obligatoire.
-        - Vous pouvez ensuite choisir entre mettre le projet à disposition de tout le monde en selectionnant "Public" ou de le garder pour vous en selecionnant "Private".
-        - Concernant l'ajout d'un fichier README et du .gitignore, etant donner que nous allons utilisez le framework Laravel ces fichier sont deja présent, il n'est donc pas utile de les ajouter lors de la création de notre dépot.
+    La procédure de création d'un répertoire GitHub est la suivante :<br/>
+        - Création d'un compte GitHub (si vous n'en possedez pas deja un)<br/>
+        - Allez dans votre profil > Your Repositories > New<br/>
+        - Dans "Repository name" attribuer un nom à votre depot (celui-ci deffinira le nom de votre projet), vous pouvez également ajouter une description mais cela n'est pas obligatoire.<br/>
+        - Vous pouvez ensuite choisir entre mettre le projet à disposition de tout le monde en selectionnant "Public" ou de le garder pour vous en selecionnant "Private".<br/>
+        - Concernant l'ajout d'un fichier README et du .gitignore, etant donner que nous allons utilisez le framework Laravel ces fichier sont deja présent, il n'est donc pas utile de les ajouter lors de la création de notre dépot.<br/>
 
 * 2 - Démarrage du projet <br/>
     Une fois le framework Laravel récupérer et le dépot distant Git créer nous devons tout d'abord initialiser le projet :
@@ -118,4 +118,68 @@ Afin de permettre cette utilisation plusieurs étapes sont à suivre:
     git merge nom_branch
     ```
     _Le nom de la branche que l'on indique dans la commande merge est celle d'ou on veut récuperer les données_
+
+    Dans notre cas, nous avons créer deux branches secondaires, une pour la partie BackEnd et une autre pour la partie FrontEnd.
+
 * 5 - Mise à jour du projet sur GitHub (Push - Pull)<br/>
+
+    Quand le projet est cloner la premiere fois, il n'est pas mis a jour automatiquement quand une modification est apportée dans le dépot distant.
+    Pour mettre à jour notre projet en local avec les modifications du dépot Git il faut executer la commande :
+    ```
+    git pull
+    ```
+
+    A l'inverse pour envoyer nos modifications vers le depot git il faut, après avoir executer les commande ```git add nom_fichier``` et ```git commit``` :
+    ```
+    git push
+    ```
+
+    Pour lier une branche a notre depot Git afin de pouvoir ensuite la push :
+    
+    ```
+    git push --set-upstream origin nom_branch
+    ```
+
+* 6 - Utilisation des Tags de versions
+
+    L'utilisation des tags permet de marquer les numéros de versions sur les commits.
+
+    ```
+    git tag v1.0.0
+    ```
+
+    Grace au -a ont indique qu'il s'agit d'un tag annoté avec l'utilisation d'un -m
+
+    Pour lister les tags existant :
+    ```
+    git tag --list
+    ```
+
+    Afficher les detailles d'un tag :
+    ```
+    git show v1.0.0
+    ```
+
+* 7 - Revenir à une version précédente
+
+    Pour revenir à une version précédente deux option s'offre à nous :<br/>
+        - Le ```git reset``` pour réinitialiser un commit précédent dans le référenciel Git<br/>
+        - Le ```git revert``` pour revenir à un commit précédent dans le référenciel Git<br/>
+
+    
+    _Source Documentaire : https://www.delftstack.com/fr/howto/git/git-go-back-to-previous-commit/ ._
+
+
+
+## Partie Back-Office
+
+Pour commencer la partie BackEnd, l'équipe Back-Office dois modifier trois types de fichiers, afin de faire correspondre le projet Laravel avec le schema de BDD précedant :
+* Les models (app/Models)
+* Les fichier de migrations (app/Http/migration)
+* Et les controllers (app/Http/Controllers)
+
+_Les models sont créés avec les fichier de migration et controllers_
+
+
+Pour gérer l'accès au Back-Office nous avons utiliser la solution Breeze
+## Partie Front-End
