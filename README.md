@@ -184,6 +184,9 @@ Pour gérer l'accès au Back-Office nous avons utiliser la solution Breeze
 
 ### Modification apportées au projet
     Création de 3 table dans la BDD : Comment, Reply, Task <br/>
+    Modifiaction des liaisons entre le projet et les BDD pour faire correspondre les commandes avec les nouvelles Tables. <br/>
+    Toutes ces modifications ont pour but de créer une otpion de login sur notre site. <br/>
+    _Malheursement, a cause de problèmes non résoluts, cette option n'est pas encore disponible_
 
 
 ## Partie Front-End
