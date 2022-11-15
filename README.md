@@ -58,12 +58,12 @@ Pour effectuer un travail colaboratif sur le projet 3ISystem, nous allons utilis
 Afin de permettre cette utilisation plusieurs étapes sont à suivre:
 
 * 1 - Création du répertoire GitHub<br/>
-    La procédure de création d'un répertoire GitHub est la suivante :
-        - Création d'un compte GitHub (si vous n'en possedez pas deja un)
-        - Allez dans votre profil > Your Repositories > New
-        - Dans "Repository name" attribuer un nom à votre depot (celui-ci deffinira le nom de votre projet), vous pouvez également ajouter une description mais cela n'est pas obligatoire.
-        - Vous pouvez ensuite choisir entre mettre le projet à disposition de tout le monde en selectionnant "Public" ou de le garder pour vous en selecionnant "Private".
-        - Concernant l'ajout d'un fichier README et du .gitignore, etant donner que nous allons utilisez le framework Laravel ces fichier sont deja présent, il n'est donc pas utile de les ajouter lors de la création de notre dépot.
+    La procédure de création d'un répertoire GitHub est la suivante :<br/>
+        - Création d'un compte GitHub (si vous n'en possedez pas deja un)<br/>
+        - Allez dans votre profil > Your Repositories > New<br/>
+        - Dans "Repository name" attribuer un nom à votre depot (celui-ci deffinira le nom de votre projet), vous pouvez également ajouter une description mais cela n'est pas obligatoire.<br/>
+        - Vous pouvez ensuite choisir entre mettre le projet à disposition de tout le monde en selectionnant "Public" ou de le garder pour vous en selecionnant "Private".<br/>
+        - Concernant l'ajout d'un fichier README et du .gitignore, etant donner que nous allons utilisez le framework Laravel ces fichier sont deja présent, il n'est donc pas utile de les ajouter lors de la création de notre dépot.<br/>
 
 * 2 - Démarrage du projet <br/>
     Une fois le framework Laravel récupérer et le dépot distant Git créer nous devons tout d'abord initialiser le projet :
@@ -159,4 +159,3 @@ Afin de permettre cette utilisation plusieurs étapes sont à suivre:
     ```
     git show v1.0.0
     ```
-    
